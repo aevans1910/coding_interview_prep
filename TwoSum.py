@@ -2,17 +2,22 @@
 
 #Question: Given an array of integers, return indices of the two 
 #numbers such that they add up to a specific target.
+#Restated question: I have an array with intergers in it. I want to use two
+#of the intergers in that array to get to the target sum. 
 
+#Questions:
 #How do I return the indices? Do I return them as an array? How big can
 #this array be? Will there always be a solution? Will there only be one
 #solution? May I use the same element twice?
 
+#Assumptions:
 #(Some assumptions come from Leetcode) I assume that each input will always
 #have exactly one solution. I will also assume that I may not use the same
 #element twice. I will also assume that I will return the indices as an
 #array.
 
-#Brute force aproach. Time = On^2
+#Brute force aproach. Time = On^2 This is a very slow option, however it is very 
+#easy to code. I would not suggest using this if ever needing to scale.
 #This is not the way to do it
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -21,7 +26,8 @@ class Solution:
                 if nums[index1] + nums[index2] == target:
                     return [index1, index2]
 
-#Hash table solution Time: O(n)
+#Hash table solution Time: O(n) This is a relativly fast approach, however it takes
+#alot of space as it uses a dictionary.
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         #Need to create a dictionary to store all the relations

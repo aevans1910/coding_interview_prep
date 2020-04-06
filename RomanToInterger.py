@@ -1,16 +1,21 @@
 #Question: Given a roman numeral, convert it to an integer. Input 
 #is guaranteed to be within the range from 1 to 3999.
+#Restated question: I need to take a roman numeral from the range of 1 to 3999,
+#and turn it into a decimal number interger.
 
-#Time: O(n)
+#Questions:
 # Will ther always be at least one letter? Will they always be
 #capital or will I need to deal with lower case letters? Will
 #there be letters I don't have in the dictionary?
 
+#Assumptions:
 # For this excercise I will assume that the letters will alwasy be
 #capital because that is how roman numerals are written. I will
 #also assume that there won't be any letters that aren't in the
 #dictionary.
 
+#Time: O(n) This is relativley fast but it does take a bit of space as it uses a 
+#dictionary. 
 
 #I need to create the dictionary with the roman numerals in it.
 class Solution:
