@@ -1,3 +1,6 @@
+#Question: Given a roman numeral, convert it to an integer. Input 
+#is guaranteed to be within the range from 1 to 3999.
+
 #Time: O(n)
 # Will ther always be at least one letter? Will they always be
 #capital or will I need to deal with lower case letters? Will
@@ -7,6 +10,7 @@
 #capital because that is how roman numerals are written. I will
 #also assume that there won't be any letters that aren't in the
 #dictionary.
+
 
 #I need to create the dictionary with the roman numerals in it.
 class Solution:
