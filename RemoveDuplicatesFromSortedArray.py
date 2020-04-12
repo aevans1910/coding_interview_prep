@@ -6,7 +6,7 @@
 # in-place with O(1) extra memory.
 
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums):
         index = 0
         while index < len(nums)-1:
             num1 = nums[index]
