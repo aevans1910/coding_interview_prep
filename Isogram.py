@@ -1,3 +1,8 @@
+#Code from Exercism
+
+#Test cases: "Isogram", "Inside", "make corgi buns"
+#Bad test cases: ["hey"], a very long text
+
 def is_isogram(string):
     #Make a hashtable - a set
     #While there are still letter in the word that we 
