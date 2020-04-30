@@ -27,3 +27,11 @@ class Solution:
             else:
                 stack.append(token)
         return stack[0]
+
+# ["4", "13", "5", "/", "+"]
+# "4" -> stack=["4"]
+# "13" -> stack=["4", "13"]
+# "5" -> stack=["4", "13", "5"]
+# "/" -> val_2="5" val_1="13" -> eval("13" + "/" + "5") -> 13/5=2.6 -> int(2.6)=2 -> stack=["4", "2"]
+# "+" -> val_2="2" val_1="4" -> eval("2" + "+" + "4") -> 2+4=6 -> stack=["6"]
+# return "6"
