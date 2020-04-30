@@ -28,6 +28,7 @@ class Solution:
                 stack.append(token)
         return stack[0]
 
+# Walk through
 # ["4", "13", "5", "/", "+"]
 # "4" -> stack=["4"]
 # "13" -> stack=["4", "13"]
